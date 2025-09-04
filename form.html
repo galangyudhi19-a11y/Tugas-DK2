@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Pemesanan / Konsultasi — Apotek Medicine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <!-- Logo gambar -->
+    <a href="index.html" class="logo">
+      <img src="Screenshot 2025-08-27 085906.png" alt="Logo Apotek" class="logo-img">
+      <span><h1>Apotek Medicine</h1></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="profil.html">Profil</a>
+      <a href="produk.html">Produk</a>
+      <a href="form.html" class="btn">Form Pemesanan</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container section">
+    <h1>Form Pemesanan / Konsultasi</h1>
+    <p class="muted">Isi data berikut untuk memesan produk atau konsultasi ringan.
+      *Wajib diisi.</p>
+
+    <form class="card pad form" action="#" method="post">
+      <div class="grid-2">
+        <label>Nama Lengkap*
+          <input type="text" name="nama" placeholder="Nama Anda" required />
+        </label>
+        <label>No. HP / WhatsApp*
+          <input type="number" name="hp" placeholder="08xxxxxxxxxx" required />
+        </label>
+      </div>
+
+      <div class="grid-2">
+        <label>Email
+          <input type="email" name="email" placeholder="opsional@contoh.com" />
+        </label>
+        <label>Kategori*
+          <select name="kategori" required>
+            <option value="">-- Pilih --</option>
+            <option>Obat</option>
+            <option>Suplemen</option>
+            <option>Alat Kesehatan</option>
+            <option>Herbal</option>
+          </select>
+        </label>
+      </div>
+
+      <label>Keluhan / Catatan*
+        <textarea name="catatan" rows="4" placeholder="Ceritakan singkat keluhan atau produk yang dicari" required></textarea>
+      </label>
+
+      <div class="grid-2">
+        <label>Upload Resep (jika ada)
+          <input type="file" name="resep" accept=".jpg,.jpeg,.png,.pdf" />
+        </label>
+        <label>Metode Pengambilan*
+          <select name="ambil" required>
+            <option value="">-- Pilih --</option>
+            <option>Ambil di Toko</option>
+            <option>Antar ke Rumah</option>
+          </select>
+        </label>
+      </div>
+
+      <label>
+        Alamat Pengantaran (isi bila pilih "Antar ke Rumah")
+        <input type="text" name="alamat" placeholder="Jalan, RT/RW, Kelurahan, Kota" />
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Kirim Form</button>
+        <a href="index.html" class="btn outline">Kembali</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2025 Apotek Medicine</small>
+    </div>
+  </footer>
+</body>
+</html>
